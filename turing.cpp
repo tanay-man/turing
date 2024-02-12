@@ -2,11 +2,13 @@
 //
 
 #include "turing.h"
-
+#include "ChessBoard.h"
 using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
-	return 0;
+	ChessBoard cb;
+	cb = ChessBoard::setNewState(cb);
+	ChessBoard::printState(cb);
+	// ChessBoard::printBitBoard(cb.pieceBB[5]);
 }
